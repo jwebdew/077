@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+}
+
+header {
+    max-width: 1280px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: turquoise;
+    margin: 0 auto;
+}
+header::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+section {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+section::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+article {
+    height: 250px;
+    font-size: 50px;
+    float: left;
+}
+article:first-child {
+    background-color: papayawhip;
+    width: 60%;
+}
+article:nth-child(2) {
+    width: 40%;
+    background-color: pink;
+}
+article:nth-child(3) {
+    width: 33.33%;
+    background-color: plum;
+}
+article:nth-child(4) {
+    width: 33.33%;
+    background-color: rosybrown;
+}
+article:nth-child(5) {
+    width: 33.33%;
+    background-color: seagreen;
+}
+article:nth-child(6) {
+    width: 50%;
+    background-color: slategray;
+}
+article:nth-child(7) {
+    width: 50%;
+    background-color: teal;
+}
+article:nth-child(8) {
+    width: 100%;
+    background-color: tan;
+}
+@media screen and (max-width: 1024px) {
+    article:nth-child(3) {width: 50%;}
+    article:nth-child(4) {width: 50%;}
+    article:nth-child(5) {width: 100%;}
+}
+@media screen and (max-width: 767px) {
+    article:nth-child(6) {width: 100%;}
+    article:nth-child(7) {width: 100%;}
+}
+@media screen and (max-width: 640px) {
+    header {
+        height: auto;
+        line-height: 1.5;
+        background-color: #fff;
+        text-align:center;
+    }
+    header h1 {float:none;}
+    header nav {float:none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    header nav ul li {
+        display:block;
+        background-color: tomato;
+        height: 50px;
+        line-height: 50px;
+        margin: 10px 0;
+    }
+
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7),
+    article:nth-child(8) {display:none;}
+
+     
+}
+
+

@@ -1,0 +1,33 @@
+@font-face {
+    font-family: '08SeoulNamsan EB';
+    src: url('SeoulNamsanEB.eot');
+    src: url('SeoulNamsanEB.eot?#iefix') format('embedded-opentype'),
+        url('SeoulNamsanEB.woff2') format('woff2'),
+        url('SeoulNamsanEB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '08SeoulNamsan vert';
+    src: url('SeoulNamsanvert.eot');
+    src: url('SeoulNamsanvert.eot?#iefix') format('embedded-opentype'),
+        url('SeoulNamsanvert.woff2') format('woff2'),
+        url('SeoulNamsanvert.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '08SeoulNamsan B';
+    src: url('SeoulNamsanB.eot');
+    src: url('SeoulNamsanB.eot?#iefix') format('embedded-opentype'),
+        url('SeoulNamsanB.woff2') format('woff2'),
+        url('SeoulNamsanB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

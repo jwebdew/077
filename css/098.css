@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+.slick-prev {
+    left: 50px;
+    z-index: 9;
+    background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
+    width: 68px;
+    height: 68px;
+}
+.slick-prev:hover, .slick-prev:focus {
+    background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
+}
+.slick-next {
+    right: 50px;
+    z-index: 9;
+    background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
+    width: 68px;
+    height: 68px;
+}
+.slick-next:hover, .slick-next:focus {
+    background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
+}
+.slick-prev:before, .slick-next:before {
+    display: none;
+}

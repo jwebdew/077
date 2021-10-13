@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+ * {margin:0; padding:0;}
+ li {list-style: none;}
+ a {
+     text-decoration: none;
+     color: #333;
+     display: block;
+ }
+
+ header {
+     width: 640px;
+     border: 1px solid #ccc;
+     margin: 0 auto;
+ }
+ header .header_top {
+     height: 60px;
+     line-height: 60px;
+     text-align: center;
+     padding: 0 20px;
+ }
+header span {font-size: 0;}
+
+header .header_top::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header .header_top .menu {
+    float: left;
+}
+header .header_top h1 {
+    display: inline-block;
+}
+header .header_top .search_icon {
+    float: right;
+}
+/* 검색창 */
+
+header .search {
+    background-color: #eee;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+header .search input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+header .search button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ff6565;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+header .search button:hover {
+    background-color: #f14646;
+}

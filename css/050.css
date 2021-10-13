@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+}
+fieldset{border:0;}
+legend {
+    position: absolute;
+    left: -99999px;
+}
+#form {
+    width: 600px;
+    border: 1px solid #333;
+    margin: 50px auto;
+    padding: 50px;
+}
+/*  > 자식 선택 */
+#form fieldset > div::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+#form fieldset > div > label {
+    width: 150px;
+    font-weight: bold;
+    
+    text-align: right;
+   /* display: inline-block;*/
+   float: left;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: 1px solid #000; 
+    padding: 0 10px;
+    box-sizing:border-box
+}
+::placeholder {
+    font-size: 12px;
+    color: #ddd;
+}
+input[type="button"] {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+.address input[type="text"] {
+    margin-left: 160px;
+}
+.drank div {
+    display: inline-block;
+    line-height: 32px;
+}
+textarea {
+    resize: none;
+    width: 300px;
+}
+select {
+    height: 40px;
+    width: 200px;
+}
+.button {
+    text-align:center;
+    margin-top: 40px;
+}
+.button input[type="reset"] {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.button input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    border: 1px solid royalblue;
+    background-color: royalblue;
+    color: #fff;
+}
+/* #form span {
+    line-height: 32px;
+} */
+/* + 바로 뒤에 있는 형제선택자 */
+input[type="radio"] + span {
+    line-height: 32px;
+}
+
+
+/* 1. submit 버튼 스타일 적용 
+    2. submit과 reset 버튼을 묶어서 가운데로 배치
+*/

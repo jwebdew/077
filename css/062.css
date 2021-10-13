@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+}
+header {
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    /* vertical-align: top , middle, bottom */
+    width: 200px;
+}
+/*nav > ul > li > a
+== .depth01 > a*/
+.depth01 > a {color: #fff;}
+.depth02 {
+    background-color: rgba(0, 0, 0, .5);
+}
+.depth02 li {
+    line-height: 50px;
+}
+.depth02 li:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+.depth02 li a {
+    color: #fff;
+}
+
+.main_visual {
+    height: 100vh; 
+    /* 
+    뷰포트 높이
+    100vh = 100%
+     50vh = 50% 
+    
+    뷰포트 넓이
+    100vw = 100%
+    50vw = 50%
+     */
+    background: url('../img/img_02.jpg') center center / cover no-repeat;
+}

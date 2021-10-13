@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    display: block;
+    color: #333;
+}
+
+.wrap > div {
+    max-width: 1280px; /* 중심축값 1280px  */
+    width: 100%; /* 뷰포트 크기가 1280이하일때 width값이 100%로 적용 */
+    background-color: burlywood;
+    margin: 0 auto;
+}
+.wrap .cont::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.wrap .cont div {
+    float: left;
+    /* width: 640px; */
+    width: 50%;
+    height: 500px;
+    background-color: cadetblue;
+}
+.wrap .cont div:nth-child(2) {
+    background-color: royalblue;
+}
+
+@media screen and (max-width: 1280px) {
+    /* .wrap > div {width: 100%;} */
+
+}

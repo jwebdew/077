@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+.main_visual {
+    height: 500px;
+    overflow: hidden;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 좌우 화살표 이미지아이콘 적용법 */
+/* .slick-prev {
+    left: 50px;
+    z-index: 9;
+    background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat; 
+    width: 68px;
+    height: 68px;
+    background-color: rgba(255, 2555, 255, .5);
+}
+.slick-prev:hover, .slick-prev:focus {
+    background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat; 
+    background-color: rgba(255, 2555, 255, .5);
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none;
+}
+.slick-next {
+    right: 50px;
+    z-index: 9;
+    background: url('../img/20210324-main-kv-arr-r.png') rgba(255, 255, 255, .5) 0 0 no-repeat;
+    background-color: rgba(255, 2555, 255, .5);
+    width: 68px;
+    height: 68px;
+}
+.slick-next:hover, .slick-next:focus {
+    background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
+    background-color: rgba(255, 2555, 255, .5);
+} */
+
+/* 좌우 화살표 폰트아이콘 적용법 */
+
+.slick-prev {
+    left: 50px;
+    z-index: 9;
+}
+.slick-next {
+    right: 50px;
+    z-index: 9;
+}
+.slick-prev:before {
+    content:'\f053';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    opacity: 1;
+}
+.slick-next:before {
+    content:'\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    opacity: 1;
+}

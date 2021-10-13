@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    display: block;
+    color: #333;
+}
+header {
+    background-color: tomato;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+nav {
+    width: 1280px;
+    /* background-color: violet; */
+    margin: 0 auto;
+}
+nav > ul > li {
+    display:inline-block;
+    width: 200px;
+}
+nav > ul > li > a {
+    color: #fff;
+}
+.depth02 {
+    background-color: pink;
+}
+.depth02 li {
+    line-height: 50px;
+}

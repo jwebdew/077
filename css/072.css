@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    display: block;
+    color: #333;
+}
+
+.cont03 {
+    max-width: 1440px;
+    /*width: 100%;*/
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: teal;
+     
+}
+.cont03 div::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.cont03 > div {
+    background-color: tomato;
+    /* calc + , - , * , / 함수법 */
+    /*width: calc(100% - 48px);*/
+    max-width: 1392px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cont03 div article {
+    float: left;
+    /* (박스사이즈 / 전체컨텐츠) * 100 */
+    /* (448 / 1392) * 100*/
+    width: 32.18%;
+    background-color: tan;
+}
+.cont03 div article {
+    margin-right: 1.72%;
+    /* 
+    (24 / 1392) * 100 = 1.72
+    */
+}
+.cont03 div article:last-child {
+    margin-right: 0;
+}
+.cont03 article img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.wrap {
+    max-width: 1440px;
+    width: 100%;
+    height: 260px;
+    background-color: yellow;
+    margin: 100px auto;
+}
+.wrap::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.wrap div {
+    float: left;
+    background-color: yellowgreen;
+    height: 100%;
+}
+.wrap div:first-child {
+    width: 440px;
+}
+.wrap div:nth-child(2) {
+    background-color: tomato;
+    /* (박스크기 / 컨테이너 중심축) * 100 */
+    /*width: 1000px;*/
+    /*(1000 / 1440) * 100*/
+    /*width: 69.44444444%;*/
+    /*(100% - 440px) = 2번째 div 크기*/
+    width: calc(100% - 440px);
+}

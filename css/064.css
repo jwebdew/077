@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+}
+.menu {display:none;}
+header {
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(255, 99, 71, 0.644);
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    z-index: 1;
+    width: 100%;
+}
+
+header > div {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+header nav {
+    display: inline-block;
+}
+header nav ul li {
+    display: inline-block;
+    width: 150px;
+}
+header h1 {
+    float:left;
+}
+header .search {
+    float: right;
+}
+
+/* 메인비주얼 */
+.main_visual {
+    height: 800px;
+    background: url('../img/flower.JPG') center center / cover no-repeat;
+    position: relative;
+}
+.main_visual div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* .cont01 content01 */
+.cont01 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 100px auto;
+    /*background-color: thistle;*/
+    text-align: center;
+    
+}
+.cont01 h3 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.cont01::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.cont01 article {
+    float: left;
+    width: 24%;
+    margin-right: 1.3%;
+}
+.cont01 article:last-of-type {
+    margin-right: 0;
+}
+.cont01 article img {
+    width: 100%;
+}
+.cont01 article dl dt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* 1024px이하  */
+@media screen and (max-width: 1024px) {
+    header nav {display: none;}
+    .menu {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .search {
+        margin-right: 20px;
+    }
+    .cont01 article {
+        width: 49%;
+        margin-right: 2%;
+    }
+    .cont01 article:nth-of-type(2) {
+        margin-right: 0;
+    }
+}
